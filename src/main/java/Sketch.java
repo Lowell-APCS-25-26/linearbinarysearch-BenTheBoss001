@@ -57,8 +57,8 @@ public class Sketch {
     return -1;
   }
   public int recursiveBinarySearch(int catNumToFind, int nLow, int nHigh){
-    guess = (low+high)/2;
-    if (low > high){
+    int guess = (nLow+nHigh)/2;
+    if (nLow > nHigh){
       return -1;
     }   
       if (store[guess].getCatNum() > catNumToFind){
